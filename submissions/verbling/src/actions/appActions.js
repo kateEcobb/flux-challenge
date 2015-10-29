@@ -1,13 +1,13 @@
 import * as types from '../constants/ActionTypes';
 
-export function getMaster(jedi) { 
+function getMaster(jedi) { 
   return { 
     type: types.SCROLL_UP, 
     jedi
   };
 }
 
-export function getApprentice(jedi) { 
+function getApprentice(jedi) { 
   return { 
     type: types.SCROLL_DOWN, 
     jedi
@@ -20,3 +20,11 @@ export function changePlanet(planet) {
     planet
   }
 }
+
+
+// function API(jediID) { 
+//   return function(dispatch) { 
+//     return fetchJedi
+
+//   }
+// }
